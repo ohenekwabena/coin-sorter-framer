@@ -25,7 +25,7 @@ function CoinSorter({ numOfCoins }) {
                     layoutId={`coin-${coinIndex}`}
                     key={`coin-${coinIndex}`}
                     className={styles.coin}
-                    transition={{ type: "spring", stiffness: 177, damping: 30 }}
+                    transition={{ type: "spring", stiffness: 177, damping: 30 + coinIndex * 5 }}
                   />
                 );
               })}
